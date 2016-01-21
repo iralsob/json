@@ -20,7 +20,8 @@
 					cache: false,
 					data: url,
 					success: function(data){
-						alert(1);
+						data = $.parseJSON(data);
+						console.log(data);
 					}
 				});
 			  }
