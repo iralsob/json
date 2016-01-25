@@ -30,6 +30,7 @@ function autocomplite (input) {
 	});
 
 	$('body').on('click', '#'+inputId+'-result li', function(){
+		$('#'+inputId+'-result li').remove();
 		input.val($(this).html());
 	});
 }
