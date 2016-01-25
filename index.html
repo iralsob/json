@@ -5,6 +5,9 @@
 </head>
 <body onload="main()">
 	<input type="text">
+	<ul id="result">
+
+	</ul>
 
 	<select></select>
 
@@ -20,8 +23,10 @@
 					cache: false,
 					data: url,
 					success: function(data){
+						$('#result li').remove();
 						for(var i=0; i<data.length; i++) {
 							console.log(data[i].Name);
+							$('#result').append('<li>'+data[i].Name+'</li>');
 						}
 						
 					}
