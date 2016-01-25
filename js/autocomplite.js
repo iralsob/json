@@ -19,7 +19,7 @@ function autocomplite (input) {
 	
 	var inputId = input.selector.substr(1);
 	console.log(inputId);
-	input.after( "<ul id='"+input.id+"-result'></ul>" );
+	input.after( "<ul id='"+inputId+"-result'></ul>" );
 
 	input.keyup(function (e) {
 		var value = input.val();
@@ -31,16 +31,16 @@ function autocomplite (input) {
 				cache: false,
 				data: url,
 				success: function(data){
-					$('#'+input.id+'-result li').remove();
+					$('#'+inputId+'-result li').remove();
 					for(var i=0; i<data.length; i++) {
-						$('#'+input.id+'-result').append('<li>'+data[i].Name+'</li>');
+						$('#'+inputId+'-result').append('<li>'+data[i].Name+'</li>');
 					}
 				}
 			});
 		}
 	});
 
-	$('#'+input.id+'result').on('click', 'li', function(){
+	$('#'+inputId+'result').on('click', 'li', function(){
 
 		input.val($(this).html());
 	});
