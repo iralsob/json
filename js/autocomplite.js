@@ -40,8 +40,7 @@ function autocomplite (input) {
 		}
 	});
 
-	$('#'+inputId+'result').on('click', 'li', function(){
-
+	$('body').on('click', '#'+inputId+'result li', function(){
 		input.val($(this).html());
 	});
 }
