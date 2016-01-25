@@ -43,8 +43,8 @@
 				}
 			});
 			$('#result').on('click', 'li', function(){
-				console.log(this);
-				$('input').val(this);
+				console.log(this.text());
+				$('input').val(this.text());
 			});
 		});
 	</script>
