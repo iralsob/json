@@ -1,7 +1,11 @@
 function autocomplite (input) {
 	
 	var inputId = input.selector.substr(1);
-	console.log(inputId);
+
+	//добавляем wrapper и список для ответа
+	org_html = document.getElementById(inputId).innerHTML;
+	new_html = "<div class='autocomplite-wrap'>" + org_html + "</div>";
+	document.getElementById(inputId).innerHTML = new_html;
 	input.after( "<ul id='"+inputId+"-result'></ul>" );
 
 	input.keyup(function (e) {
