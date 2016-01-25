@@ -2,6 +2,7 @@
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
+	margin-bottom: 20px;
 }
 .autocomplite-wrap ul {
 	margin: 0;
