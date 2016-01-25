@@ -1,0 +1,19 @@
+.autocomplite-wrap{
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+.autocomplite-wrap ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: rgba(0,0,255,.1);
+}
+.autocomplite-wrap li {
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.autocomplite-wrap li:hover {
+	background: rgba(0,0,255,.5);
+	color: #fff;
+}
