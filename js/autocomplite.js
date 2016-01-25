@@ -1,20 +1,3 @@
-$(document).ready(function(){
-	
-
-	var start = 'part=';
-	$.ajax({
-		type: 'POST',
-		url: 'http://prep.snegoffon.ru/Json/Preps',
-		cache: false,
-		data: start,
-		success: function(data){
-			for(var i=0; i<data.length; i++) {
-				$('#all').append('<option>'+data[i].Name+'</option>');
-			}
-		}
-	});
-});
-
 function autocomplite (input) {
 	
 	var inputId = input.selector.substr(1);
@@ -42,5 +25,20 @@ function autocomplite (input) {
 
 	$('body').on('click', '#'+inputId+'result li', function(){
 		input.val($(this).html());
+	});
+}
+
+function getAllJson (select) {
+	var start = 'part=';
+	$.ajax({
+		type: 'POST',
+		url: 'http://prep.snegoffon.ru/Json/Preps',
+		cache: false,
+		data: start,
+		success: function(data){
+			for(var i=0; i<data.length; i++) {
+				select.append('<option>'+data[i].Name+'</option>');
+			}
+		}
 	});
 }
