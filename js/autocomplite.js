@@ -23,7 +23,7 @@ function autocomplite (input) {
 		}
 	});
 
-	$('body').on('click', '#'+inputId+'result li', function(){
+	$('body').on('click', '#'+inputId+'-result li', function(){
 		input.val($(this).html());
 	});
 }
