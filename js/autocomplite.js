@@ -3,7 +3,7 @@ function autocomplite (input) {
 	var inputId = input.selector.substr(1);
 
 	//добавляем wrapper и список для ответа
-	input.wrap('<div></div>');
+	input.wrap('<div class="autocomplite-wrap"></div>');
 	input.after( "<ul id='"+inputId+"-result'></ul>" );
 
 	input.keyup(function (e) {
