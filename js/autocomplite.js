@@ -15,7 +15,7 @@ $(document).ready(function(){
 	});
 });
 function autocomplite (input) {
-	input.after( "<ul id='"+input+"-result'></ul>" );
+	input.after( "<ul id='"+input.id+"-result'></ul>" );
 
 	input.keyup(function (e) {
 		var value = input.val();
@@ -27,16 +27,16 @@ function autocomplite (input) {
 				cache: false,
 				data: url,
 				success: function(data){
-					$('#'+input+'-result li').remove();
+					$('#'+input.id+'-result li').remove();
 					for(var i=0; i<data.length; i++) {
-						$('#'+input+'-result').append('<li>'+data[i].Name+'</li>');
+						$('#'+input.id+'-result').append('<li>'+data[i].Name+'</li>');
 					}
 				}
 			});
 		}
 	});
 
-	$('#'+input+'result').on('click', 'li', function(){
+	$('#'+input.id+'result').on('click', 'li', function(){
 		input.val($(this).html());
 	});
 }
