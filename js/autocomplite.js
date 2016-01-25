@@ -15,8 +15,12 @@ function autocomplite (input) {
 				data: url,
 				success: function(data){
 					$('#'+inputId+'-result li').remove();
-					for(var i=0; i<data.length; i++) {
-						$('#'+inputId+'-result').append('<li>'+data[i].Name+'</li>');
+					if (data.length == 1) {
+						input.val(data[0].Name);
+					} else {
+						for(var i=0; i<data.length; i++) {
+							$('#'+inputId+'-result').append('<li>'+data[i].Name+'</li>');
+						}
 					}
 				}
 			});
