@@ -42,7 +42,7 @@
 				}
 			});
 			$('#result').on('click', 'li', function(){
-				console.log(this);
+				console.log($(this));
 				$('#input').val(this.html);
 			});
 		});
