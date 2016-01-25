@@ -14,7 +14,9 @@ $(document).ready(function(){
 		}
 	});
 });
+
 function autocomplite (input) {
+	console.log(input);
 	input.after( "<ul id='"+input.id+"-result'></ul>" );
 
 	input.keyup(function (e) {
@@ -37,6 +39,7 @@ function autocomplite (input) {
 	});
 
 	$('#'+input.id+'result').on('click', 'li', function(){
+
 		input.val($(this).html());
 	});
 }
