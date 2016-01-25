@@ -17,6 +17,8 @@ $(document).ready(function(){
 
 function autocomplite (input) {
 	console.log(input);
+	console.log(input.0.id);
+	console.log(input.id);
 	input.after( "<ul id='"+input.id+"-result'></ul>" );
 
 	input.keyup(function (e) {
