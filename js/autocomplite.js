@@ -36,3 +36,6 @@ $(document).ready(function(){
 		$('#input').val($(this).html());
 	});
 });
+function autocomplite (value) {
+	alert(value);
+}
