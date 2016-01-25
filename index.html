@@ -4,14 +4,13 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
-	<input type="text">
+	<input type="text" id="input">
 	<ul id="result"></ul>
-
-	<select></select>
+	<select id="all"></select>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("input").keyup(function (e) {
+			$("#input").keyup(function (e) {
 				var value = $("input").val();
 				if(value.length>2){
 					var url = 'part='+$("input").val();
@@ -38,14 +37,14 @@
 				data: start,
 				success: function(data){
 					for(var i=0; i<data.length; i++) {
-						$('select').append('<option>'+data[i].Name+'</option>');
+						$('#all').append('<option>'+data[i].Name+'</option>');
 					}
 				}
 			});
 			$('#result').on('click', 'li', function(){
 				console.log(this);
 				console.log(this.text);
-				$('input').val(this.html());
+				$('#input').val(this.html;
 			});
 		});
 	</script>
