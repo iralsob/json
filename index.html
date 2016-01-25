@@ -43,7 +43,7 @@
 			});
 			$('#result').on('click', 'li', function(){
 				console.log(this);
-				console.log(this.toString());
+				console.log(this.contents());
 				$('#input').val(this.html);
 			});
 		});
