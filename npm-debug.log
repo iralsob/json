@@ -1,0 +1,212 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'coffee-script' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'coffee-script', null ]
+7 verbose cache add spec coffee-script
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'coffee-script',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'coffee-script',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed coffee-script@*
+10 verbose addNamed "*" is a valid semver range for coffee-script
+11 silly addNameRange { name: 'coffee-script', range: '*', hasData: false }
+12 silly mapToRegistry name coffee-script
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+16 verbose addNameRange registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/coffee-script
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:24:11 PM
+20 verbose request id c15505c3330a11b8
+21 http request GET https://registry.npmjs.org/coffee-script
+22 http 200 https://registry.npmjs.org/coffee-script
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"6X11ZIRY16V5NXJ3NYAX86T1U"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '41518',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Mon, 25 Jan 2016 12:28:40 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '74',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-fra1241-FRA',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '2',
+23 verbose headers   'x-timer': 'S1453724920.493377,VS0,VE0',
+23 verbose headers   vary: 'Accept' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"6X11ZIRY16V5NXJ3NYAX86T1U"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '41518',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Mon, 25 Jan 2016 12:28:40 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '74',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-fra1241-FRA',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '2',
+24 silly get     'x-timer': 'S1453724920.493377,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving coffee-script to /Users/soboleva/.npm/registry.npmjs.org/coffee-script/.cache.json
+26 verbose makeDirectory /Users/soboleva/.npm creation not in flight; initializing
+27 silly makeDirectory /Users/soboleva/.npm uid: 503 gid: 20
+28 silly addNameRange number 2 { name: 'coffee-script', range: '*', hasData: true }
+29 silly addNameRange versions [ 'coffee-script',
+29 silly addNameRange   [ '0.7.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.7.2',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.1',
+29 silly addNameRange     '0.9.2',
+29 silly addNameRange     '0.9.3',
+29 silly addNameRange     '0.9.4',
+29 silly addNameRange     '0.9.5',
+29 silly addNameRange     '0.9.6',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.1.2',
+29 silly addNameRange     '1.1.3',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.3.1',
+29 silly addNameRange     '1.3.2',
+29 silly addNameRange     '1.3.3',
+29 silly addNameRange     '1.4.0',
+29 silly addNameRange     '1.5.0',
+29 silly addNameRange     '1.6.0',
+29 silly addNameRange     '1.6.1',
+29 silly addNameRange     '1.6.2',
+29 silly addNameRange     '1.6.3',
+29 silly addNameRange     '1.7.0',
+29 silly addNameRange     '1.7.1',
+29 silly addNameRange     '1.8.0',
+29 silly addNameRange     '1.9.0',
+29 silly addNameRange     '1.9.1',
+29 silly addNameRange     '1.9.2',
+29 silly addNameRange     '1.9.3',
+29 silly addNameRange     '1.10.0' ] ]
+30 silly addNamed coffee-script@1.10.0
+31 verbose addNamed "1.10.0" is a plain semver version for coffee-script
+32 silly mapToRegistry name coffee-script
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+36 verbose addRemoteTarball https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz',
+37 verbose addRemoteTarball   '12938bcf9be1948fa006f92e0c4c9e81705108c0' ]
+38 info retry fetch attempt 1 at 3:24:11 PM
+39 info attempt registry request try #1 at 3:24:11 PM
+40 http fetch GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz
+41 http fetch 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz
+42 silly fetchAndShaCheck shasum 12938bcf9be1948fa006f92e0c4c9e81705108c0
+43 verbose addTmpTarball /var/folders/l_/xj4q37xs2mq3hjwqyrglmnxm0000gq/T/npm-32194-e7135be5/registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for coffee-script@1.10.0
+45 silly cache afterAdd coffee-script@1.10.0
+46 verbose afterAdd /Users/soboleva/.npm/coffee-script/1.10.0/package/package.json not in flight; writing
+47 verbose afterAdd /Users/soboleva/.npm/coffee-script/1.10.0/package/package.json written
+48 silly install resolved [ { name: 'coffee-script',
+48 silly install resolved     description: 'Unfancy JavaScript',
+48 silly install resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+48 silly install resolved     author: { name: 'Jeremy Ashkenas' },
+48 silly install resolved     version: '1.10.0',
+48 silly install resolved     license: 'MIT',
+48 silly install resolved     engines: { node: '>=0.8.0' },
+48 silly install resolved     directories: { lib: './lib/coffee-script' },
+48 silly install resolved     main: './lib/coffee-script/coffee-script',
+48 silly install resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+48 silly install resolved     preferGlobal: true,
+48 silly install resolved     scripts:
+48 silly install resolved      { test: 'node ./bin/cake test',
+48 silly install resolved        'test-harmony': 'node --harmony ./bin/cake test' },
+48 silly install resolved     homepage: 'http://coffeescript.org',
+48 silly install resolved     bugs: { url: 'https://github.com/jashkenas/coffeescript/issues' },
+48 silly install resolved     repository:
+48 silly install resolved      { type: 'git',
+48 silly install resolved        url: 'git://github.com/jashkenas/coffeescript.git' },
+48 silly install resolved     devDependencies:
+48 silly install resolved      { 'uglify-js': '~2.2',
+48 silly install resolved        jison: '>=0.2.0',
+48 silly install resolved        'highlight.js': '~8.0.0',
+48 silly install resolved        underscore: '~1.5.2',
+48 silly install resolved        docco: '~0.7.0' },
+48 silly install resolved     gitHead: 'f26d33d418dcdcfcc6ad3ab774d9cabbf7af659c',
+48 silly install resolved     _id: 'coffee-script@1.10.0',
+48 silly install resolved     _shasum: '12938bcf9be1948fa006f92e0c4c9e81705108c0',
+48 silly install resolved     _from: 'coffee-script@*',
+48 silly install resolved     _npmVersion: '1.4.28',
+48 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+48 silly install resolved     maintainers: [ [Object], [Object] ],
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: '12938bcf9be1948fa006f92e0c4c9e81705108c0',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz' },
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz' } ]
+49 info install coffee-script@1.10.0 into /usr/local/lib
+50 info installOne coffee-script@1.10.0
+51 verbose installOne of coffee-script to /usr/local/lib not in flight; installing
+52 verbose makeDirectory /Users/soboleva/.npm/_locks creation not in flight; initializing
+53 silly makeDirectory /Users/soboleva/.npm/_locks uid: 503 gid: 20
+54 verbose lock using /Users/soboleva/.npm/_locks/coffee-script-7b01d0c2a8e2b5ed.lock for /usr/local/lib/node_modules/coffee-script
+55 silly install write writing coffee-script 1.10.0 to /usr/local/lib/node_modules/coffee-script
+56 verbose unbuild lib/node_modules/coffee-script
+57 silly gentlyRm /usr/local/lib/node_modules/coffee-script is being purged from base /usr/local
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/coffee-script
+59 verbose tar unpack /Users/soboleva/.npm/coffee-script/1.10.0/package.tgz
+60 verbose tar unpacking to /usr/local/lib/node_modules/coffee-script
+61 silly gentlyRm /usr/local/lib/node_modules/coffee-script is being purged
+62 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/coffee-script
+63 silly gunzTarPerm modes [ '755', '644' ]
+64 error tar.unpack untar error /Users/soboleva/.npm/coffee-script/1.10.0/package.tgz
+65 verbose unlock done using /Users/soboleva/.npm/_locks/coffee-script-7b01d0c2a8e2b5ed.lock for /usr/local/lib/node_modules/coffee-script
+66 verbose fstream_path /usr/local/lib/node_modules/coffee-script
+67 verbose fstream_type Directory
+68 verbose fstream_class DirWriter
+69 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/coffee-script'
+69 verbose stack     at Error (native)
+70 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+70 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+70 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+71 verbose cwd /Users/soboleva/Documents/ajax/json
+72 error Darwin 15.2.0
+73 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "coffee-script"
+74 error node v4.2.3
+75 error npm  v2.14.7
+76 error path /usr/local/lib/node_modules/coffee-script
+77 error code EACCES
+78 error errno -13
+79 error syscall mkdir
+80 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/coffee-script'
+80 error     at Error (native)
+80 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/coffee-script']
+80 error   errno: -13,
+80 error   code: 'EACCES',
+80 error   syscall: 'mkdir',
+80 error   path: '/usr/local/lib/node_modules/coffee-script',
+80 error   fstream_type: 'Directory',
+80 error   fstream_path: '/usr/local/lib/node_modules/coffee-script',
+80 error   fstream_class: 'DirWriter',
+80 error   fstream_stack:
+80 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+80 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+80 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+81 error Please try running this command again as root/Administrator.
+82 verbose exit [ -13, true ]
+83 verbose unbuild lib/node_modules/coffee-script
+84 silly gentlyRm /usr/local/lib/node_modules/coffee-script is being purged from base /usr/local
+85 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/coffee-script
